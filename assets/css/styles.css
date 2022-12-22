@@ -5,12 +5,63 @@
 }
 
 .par-header-menu a {
-  padding: 0 18px;
   line-height: 1.3em;
   font-family: "Inter";
   font-size: 14px;
   font-weight: 500;
 }
+
+.par-header-menu li {
+  padding: 10px;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.dropbtn {
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  color: white;
+  font-size: 14px;
+  border: none;  
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  color: white;
+  border: 0px;
+  position: absolute;
+  background-color: rgb(122, 122, 122, 0.9);
+  min-width: 160px;
+  z-index: 1;
+  outline: none;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 20px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+}
+
+.dropdown-content a:hover {
+  color: #fcbc45;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: transparent;
+}
+
 
 .par-banner-h1 {
   font-family: "Inter";
@@ -84,7 +135,7 @@
 }
 
 nav .container {
-  background: rgb(122, 122, 122, 0.5);
+  background: rgb(122, 122, 122, 0.9);
   height: 84px;
   border-radius: 5px;
 }
@@ -217,15 +268,19 @@ nav li {
 }
 
 .service-offer {
+  justify-content: center;
   margin-top: 20px;
-  gap: 1rem;
+  gap: 1.5rem;
+  position: relative;
 }
 
 .service-offer .service-box {
+  position: relative;
   padding: 30px;
   display: flex;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+
 
 .service-offer img {
   height: 45px;
@@ -595,6 +650,242 @@ a.read_more {
 }
 
 
+/* Documents Page */
+
+.documents {
+  background-color: #1D54A1;
+  color: white;
+  padding: 35px;
+}
+
+.registered_slips {
+  padding: 0px 50px 50px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+.registered_slips h1 {
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+
+.register_slip, .receipt_slip, .documentation_slip {
+  background-color: #CC8114;
+  font-weight: 600;
+  color: black;
+  font-size: 18px;
+  border-radius: 8px;
+  height: 130px;
+  margin: 10px;
+  width: 23%;
+  padding: 20;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.receipt_slip {
+  background-color: #EBB524;
+}
+
+.documentation_slip {
+  background-color: #0C7DD6;
+  color: white;
+}
+
+.receipt_slips {
+  background-color: #EBB524;
+  font-weight: 600;
+  color: black;
+  font-size: 18px;
+  border-radius: 8px;
+  height: 130px;
+  margin: 10px;
+  width: 23%;
+  padding: 20;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.register_slip:hover, .receipt_slip:hover, .documentation_slip:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 3s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.services_page {
+  padding-top: 300px;
+}
+
+.services_page h2 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.services_page p {
+  font-size: 16px;
+}
+
+.consults_page h2 {
+  margin-bottom: 15px;
+}
+
+.consults_page p {
+  width: 700px;
+  font-size: 15px;
+  margin-bottom: 24px;
+  font-weight: 400;
+}
+
+
+.service-offer .services_page_box {
+  border-radius: 5px;
+  position: relative;
+  width: 660px;
+}
+
+
+.services_page_box .bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+img.services_image {
+  height: 250px;
+  width: 250px;
+  border-radius: 10px;
+}
+
+.personal_task_hero h2 {
+  font-size: 40px;
+  padding-top: 280px;
+}
+
+.personal_tax_info img {
+  width: 100%;
+  height: 420px;
+  margin-bottom: 20px;
+}
+
+.personal_tax_info h3 {
+  font-size: 20px;
+}
+
+.personal_tax_info p {
+  font-size: 16px;
+  width: 644px;
+}
+
+.personal_tax_info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.personal_tax_info li {
+  font-size: 15px;
+}
+
+.personal_tax_info i {
+  color: #fcbc45;
+  margin-right: 5px;
+
+}
+
+.other_service {
+  padding: 20px;
+  margin: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
+}
+
+.other_service img {
+  width: 100%;
+  height: 70px;
+}
+
+.other_service h3 {
+  font-size: 21px;
+  margin-bottom: 20px;
+}
+
+
+.other_service a {
+  text-decoration: none;
+  color: rgb(70, 70, 70);
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.other_service a:hover {
+  color: #ffc207;
+}
+
+.personal_tax_question {
+  margin: 40px;
+  background-image: url("https://templatekit.jegtheme.com/acctual/wp-content/uploads/sites/58/2021/03/business-people-shaking-hands-partnership-merger-and-acquisition-concept.jpg");
+  height: 320px;
+  border-radius: 5px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.personal_tax_question_overlay {
+  padding: 40px;
+  z-index: 999;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0,0,0,0.75);
+}
+
+.personal_tax_question_overlay h4 {
+  color: white;
+  font-size: 21px;
+}
+
+
+.personal_tax_question_overlay p {
+  color: white;
+  font-size: 16.5px;
+  width: 100%;
+  margin: 20px 0px;
+}
+
+
+.personal_tax_question_overlay a {
+  color: white;
+  font-size: 16px;
+  width: 100%;
+  margin: 20px 0px;
+  text-decoration: none;
+  line-height: 1.8;
+}
+
+.personal_tax_question_overlay a:hover {
+  color: #fcbc45;
+}
+
 /* Footer */
 
 footer {
@@ -637,6 +928,7 @@ footer .contact_info i {
 
 footer .company_links {
   margin-top: 60px;
+  width: 100%;
 }
 
 footer .company_links img {
@@ -787,6 +1079,34 @@ footer h6 {
   footer .company_links {
     width: 100%;
   }
+
+  .registered_slips {
+    width: 100%;
+  }
+
+  .register_slip, .receipt_slip, .documentation_slip {
+    width: 80%;
+    font-size: 1.125rem;
+  }
+
+  .registered_slips h1 {
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .list-inline {
+    display: none;
+    font-size: 10px;
+  }
+
+  .top-nav {
+    margin: 0;
+    padding: 0;
+  }
+
+  .top-nav span {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 481px) {
@@ -841,6 +1161,13 @@ footer h6 {
     padding: 0;
     margin-bottom: 60px;
   }
+
+  footer .row {
+    padding: 0px 40px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
   
   footer .contact_info {
     width: 100%;
@@ -856,12 +1183,23 @@ footer h6 {
 
   .service-offer .service-box {
     width: 80%;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .testimonial .testimonial-content:after{
     content: "";
+  }
+
+  .registered_slips {
+    width: 95%;
+  }
+
+  .register_slip, .receipt_slip, .documentation_slip {
+    width: 45%;
+    font-size: 1.125rem;
+  }
+
+  .list-inline {
+    display: none;
   }
 }
 
@@ -912,5 +1250,53 @@ footer h6 {
   .service-offer .service-box {
     width: 40%;
   }
-}
+  
+  .service-offer .services_page_box {
+    width: 660px;
+    padding: 0;
+  }
 
+  .list-inline {
+    display: block;
+    font-size: 10px;
+  }
+
+  .registered_slips {
+    width: 70%;
+  }
+
+  .register_slip, .receipt_slip, .documentation_slip {
+    width: 23%;
+    font-size: 1.125rem;
+  }
+
+
+  img.services_image {
+    height: 250px;
+    width: 250px;
+    border-radius: 10px;
+  }
+
+  .working_process {
+    text-align: center;
+    padding: 100px 0px;
+  }
+
+  .working_process h5 {
+    color: #fcbc45;
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .working_process h2 {
+    font-size: 38px;
+    margin-bottom: 40px;
+  }
+
+  .personal_tax_info {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 100px 0px;
+  }
+}
