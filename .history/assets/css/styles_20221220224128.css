@@ -1,0 +1,71 @@
+.par-header-menu {
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.par-header-menu a {
+  padding: 0 18px;
+  line-height: 1.3em;
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.par-banner-h1 {
+  font-family: "Inter";
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 62.4px;
+}
+
+.par-banner-p {
+  font-family: "Heebo";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.par-btn {
+  color: #252425;
+  background-color: #fcbc45;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 16px;
+  padding: 14px 30px;
+}
+
+.par-h4 {
+  color: #fcbc45;
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.par-h2 {
+  font-family: "Inter";
+  font-size: 32px;
+  line-height: 38.4px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.par-p {
+  font-family: "Heebo";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.par-counting-icon {
+  color: #fcbc45;
+  font-size: 48px;
+}
+
+nav .container {
+  background: rgb(122, 122, 122, 0.5);
+  height: 84px;
+  border-radius: 5px;
+}
+
+.play-video {}

@@ -1,0 +1,495 @@
+.par-header-menu {
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.par-header-menu a {
+  padding: 0 18px;
+  line-height: 1.3em;
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.par-banner-h1 {
+  font-family: "Inter";
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 62.4px;
+}
+
+.par-banner-p {
+  font-family: "Heebo";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.par-btn {
+  color: #252425;
+  background-color: #fcbc45;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 16px;
+  padding: 14px 30px;
+}
+
+.par-h4 {
+  color: #fcbc45;
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.par-h2 {
+  font-family: "Inter";
+  font-size: 32px;
+  line-height: 38.4px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.par-p {
+  font-family: "Heebo";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.par-counting-icon {
+  color: #fcbc45;
+  font-size: 48px;
+}
+
+
+/* Navbar */
+
+nav .container {
+  background: rgb(122, 122, 122, 0.5);
+  height: 84px;
+  border-radius: 5px;
+}
+
+
+
+/* Homepage */
+
+.play-video {
+  height: 56px;
+  width: 56px;
+  align-items: center;
+}
+
+.play-video a {
+  color: black;
+}
+
+.video-play-button {
+  transform: translateX(-50%) translateY(-50%);
+  box-sizing: content-box;
+  display: inline-block;
+  margin: 20px 10px 0px 60px;
+  border-radius: 50%;
+}
+
+.video-play-button:before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: block;
+  width: 56px;
+  height: 56px;
+  background: gray;
+  border-radius: 50%;
+  animation: pulse-border 1500ms ease-out infinite;
+}
+
+.video-play-button:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: block;
+  width: 56px;
+  height: 56px;
+  background: white;
+  border-radius: 50%;
+  transition: all 200ms;
+}
+
+.video-play-button:hover:after {
+  background-color: #FCBC45;
+}
+
+.video-play-button img {
+  position: relative;
+  z-index: 3;
+  max-width: 80%;
+  width: auto;
+  height: auto;
+}
+
+.video-play-button span {
+  display: block;
+  position: relative;
+  z-index: 3;
+  width: 0;
+  height: 0;
+  border-left: 18px solid black;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+}
+
+@keyframes pulse-border {
+  0% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+    opacity: 0;
+  }
+}
+
+
+/* About Paragon */
+
+.about-paragon ul {
+  padding: 0;
+
+}
+
+.about-paragon li {
+  list-style: none;
+  line-height: 2.5;
+}
+
+.about-paragon i {
+  color: #FCBC45;
+}
+
+
+/* Services */
+
+.services {
+  padding: 100px 0px 100px 0px;
+}
+
+.service-offer {
+  gap: 1.5rem;
+}
+
+.service-offer .service-box {
+  width: 32%;
+  padding: 30px;
+  display: flex;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.service-offer img {
+  height: 45px;
+  width: 45px;
+}
+
+.service-box h3 {
+  font-size: 20px;
+}
+
+.service-box p {
+  color: gray;
+}
+
+.service-box a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FCBC45;
+  font-size: 12px;
+}
+
+
+/* Projects */
+
+.project {
+  background-image: url("https://templatekit.jegtheme.com/acctual/wp-content/uploads/sites/58/2021/03/business-people-meeting-in-office-top-view.jpg");
+  position: relative;
+  height: 600px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.projects {
+  z-index: 999;
+  padding-top: 100px;
+  height: 600px; 
+  text-align: center;
+  background-color: rgba(0,0,0,0.75);
+}
+
+.projects h5 {
+  color: #fcbc45;
+  font-size: 18px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.projects h2 {
+  margin: 0;
+  color: white;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.projects p {
+  color: white;
+  width: 600px;
+  margin: auto;
+}
+
+.project_list {
+  position: absolute;
+  width: 70rem;
+  height: 29.625rem;
+  background-color: white;
+  top: 300px;
+  left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
+  border-radius: 5px;
+  color: black;
+  padding: 30px 30px 40px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.project_list img {
+  width: 333.33px;
+  height: 225px;
+  border-radius: 5px;
+}
+
+.project_body {
+  padding-top: 20px;
+  width: 333.33px;
+  margin: 0;
+}
+
+.project_body h3 {
+  font-size: 20px;
+  margin: 8px 0px 20px;
+}
+
+.project_body p {
+  font-size: 16px;
+}
+
+.project_body a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FCBC45;
+  padding-top: 15px;
+  font-size: 12px;
+}
+
+
+
+/* Feedbacks */
+
+
+.feedback {
+  width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 300px;
+  padding-bottom: 100px;
+}
+
+.feedback h5 {
+  font-size: 18px;
+  color: #FCBC45;
+}
+
+.feedback h2 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.feedback p {
+  color: gray;
+}
+
+
+
+/* Testimonial */
+
+.testimonial{
+  background: #fff;
+  padding: 20px;
+  margin: 0 15px 10px 15px;
+  position: relative;
+}
+
+.testimonial .title{
+  font-size: 20px;
+  font-weight: 500;
+  color: #333;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+.testimonial .description{
+  font-size: 14px;
+  color: #555;
+  line-height: 30px;
+}
+.testimonial .testimonial-content{
+  position: relative;
+}
+.testimonial .testimonial-content:after{
+  content: "\f10e";
+  font-family: "Font Awesome 5 Free"; font-weight: 900;
+  position: absolute;
+  top: -5px;
+  right: 0;
+  font-size: 45px;
+  color: #FFF4E1;
+}
+.testimonial .pic{
+  display: inline-block;
+  float: left;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin-right: 15px;
+  overflow: hidden;
+}
+.testimonial .pic img{
+  width: 100%;
+  height: auto;
+}
+.testimonial .content{
+  display: inline-block;
+  margin: 10px 0;
+}
+.testimonial .name{
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0;
+  text-transform: capitalize;
+}
+.testimonial .post{
+  font-size: 14px;
+  color: #555;
+  line-height: 24px;
+}
+.testimonial .rating{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.testimonial .rating li{
+  display: inline-block;
+  color: #ffc207;
+}
+.owl-theme .owl-controls{
+  margin-top: 20px;
+}
+.owl-theme .owl-controls .owl-page span{
+  background: #0d8a63;
+}
+
+@media only screen and (max-width: 479px){
+  .testimonial .testimonial-content:after{
+      content: "";
+  }
+}
+
+
+/* Consultation */
+
+.consultation {
+  background-image: url("https://templatekit.jegtheme.com/acctual/wp-content/uploads/sites/58/2021/03/successful-business-team-working-in-office.jpg");
+  position: relative;
+  height: 435px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.consultations {
+  z-index: 999;
+  padding-top: 120px;
+  height: 435px;
+  color: white;
+  text-align: center;
+  background-color: rgba(0,0,0,0.75);
+}
+
+.consultations p {
+  width: 1120px;
+  height: 72px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 224px;
+}
+
+
+/* Blog */
+
+.blog {
+  padding: 100px 0px;
+  text-align: center;
+}
+
+.blog_body {
+  width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blog_body h5 {
+  color: #fcbc45;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.blog_body p {
+  padding: 0 280px;
+  color: gray;
+  margin-top: 20px;
+}
+
+.blog_body img {
+  width: 353.53px;
+  height: 250px;
+  border-radius: 5px;
+}
+
+.image_holder {
+  position: relative;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  padding: 10px 20px;
+  border-top-right-radius: 5px 5px;
+  font-size: 14px;
+  color: gray;
+}
+
+.blog_body a {
+  margin: 10px 0px 0px;
+}

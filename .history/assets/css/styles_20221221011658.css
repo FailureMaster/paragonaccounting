@@ -1,0 +1,232 @@
+.par-header-menu {
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.par-header-menu a {
+  padding: 0 18px;
+  line-height: 1.3em;
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.par-banner-h1 {
+  font-family: "Inter";
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 62.4px;
+}
+
+.par-banner-p {
+  font-family: "Heebo";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.par-btn {
+  color: #252425;
+  background-color: #fcbc45;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 16px;
+  padding: 14px 30px;
+}
+
+.par-h4 {
+  color: #fcbc45;
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.par-h2 {
+  font-family: "Inter";
+  font-size: 32px;
+  line-height: 38.4px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.par-p {
+  font-family: "Heebo";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.par-counting-icon {
+  color: #fcbc45;
+  font-size: 48px;
+}
+
+nav .container {
+  background: rgb(122, 122, 122, 0.5);
+  height: 84px;
+  border-radius: 5px;
+}
+
+.play-video {
+  height: 56px;
+  width: 56px;
+  align-items: center;
+}
+
+.play-video a {
+  color: black;
+}
+
+.video-play-button {
+  transform: translateX(-50%) translateY(-50%);
+  box-sizing: content-box;
+  display: inline-block;
+  margin: 20px 10px 0px 60px;
+  border-radius: 50%;
+}
+
+.video-play-button:before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: block;
+  width: 56px;
+  height: 56px;
+  background: gray;
+  border-radius: 50%;
+  animation: pulse-border 1500ms ease-out infinite;
+}
+
+.video-play-button:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: block;
+  width: 56px;
+  height: 56px;
+  background: white;
+  border-radius: 50%;
+  transition: all 200ms;
+}
+
+.video-play-button:hover:after {
+  background-color: #FCBC45;
+}
+
+.video-play-button img {
+  position: relative;
+  z-index: 3;
+  max-width: 80%;
+  width: auto;
+  height: auto;
+}
+
+.video-play-button span {
+  display: block;
+  position: relative;
+  z-index: 3;
+  width: 0;
+  height: 0;
+  border-left: 18px solid black;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+}
+
+@keyframes pulse-border {
+  0% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+    opacity: 0;
+  }
+}
+
+.about-paragon ul {
+  padding: 0;
+
+}
+
+.about-paragon li {
+  list-style: none;
+  line-height: 2.5;
+}
+
+.about-paragon i {
+  color: #FCBC45;
+}
+
+
+.services {
+  padding: 100px 0px 100px 0px;
+}
+
+.service-offer {
+  gap: 1.5rem;
+}
+
+.service-offer .service-box {
+  width: 32%;
+  padding: 30px;
+  display: flex;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.service-offer img {
+  height: 45px;
+  width: 45px;
+}
+
+.service-box h3 {
+  font-size: 20px;
+}
+
+.service-box p {
+  color: gray;
+}
+
+.service-box a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FCBC45;
+  font-size: 12px;
+}
+
+
+
+
+.project {
+  background-image: url("https://templatekit.jegtheme.com/acctual/wp-content/uploads/sites/58/2021/03/business-people-meeting-in-office-top-view.jpg");
+  position: relative;
+  height: 600px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 100px;
+  opacity: 0.75;
+}
+
+.project::after {
+  position: absolute;
+  background-color: black;
+
+}
+
+.projects {
+  z-index: 999;
+  text-align: center;
+
+}
+
+.projects h5 {
+  color: #fcbc45;
+}
